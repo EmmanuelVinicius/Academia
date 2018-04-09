@@ -1,10 +1,28 @@
-label, input{
-	display: block;
-}
-h1, h3{
-	text-align: center;
-}
 body{
 	font-family: 'Play', sans-serif;
 	text-align: center;
+	background: rgba(192,200,62,.6)
+}
+img{
+	width: 100px;
+	height: 100px;
+}
+#fundo{
+	background: white;
+	position: fixed top;
+	padding: 12px 0;
+}
+input{
+	width: 50%;
+	height: 40px;
+	border-radius: 6px;
+	margin: 2px 26.7% 15px 26.7%;
+	text-align: center;
+}
+fieldset {
+	border: none;
+}
+legend{
+	font-size: 15pt;
+	font-weight: 800;
 }
