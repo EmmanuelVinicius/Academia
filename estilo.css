@@ -1,0 +1,10 @@
+label, input{
+	display: block;
+}
+h1, h3{
+	text-align: center;
+}
+body{
+	font-family: 'Play', sans-serif;
+	text-align: center;
+}
