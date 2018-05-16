@@ -20,10 +20,10 @@
 
             <fieldset>
                 <legend>LOGIN</legend>
-                <label for="nome">Email:</label>
-                <input type="text" name="email">
+                <label for="email">Email:</label>
+                <input id="email" type="text" name="email">
                 <label for="senha">Senha:</label>
-                <input type="password" name="senha">
+                <input id="senha" type="password" name="senha">
                 <br>
                 <br>
                 <br>
@@ -35,10 +35,22 @@
                 <br>
                 <div class="entrar">
                     
-                <a href="telaPrincipal.html">Entrar</a>
+                <a onclick="vldUsuario()">Entrar</a>
             </div>
+            <span id="msg"></span>
             <input type="reset" value="Limpar">
             </fieldset>
-        
+        <script>
+            function vldUsuario(){
+                var email = document.getElementById("email"), senha = document.getElementById("senha"), msg = document.getElementById("msg");
+                if(email.value == "jorge" && senha.value == "viado"){
+                    window.location.href = "telaPrincipal.html";
+                    alert("Correto");
+                }else{
+                    alert("Errado");
+                    msg.value = "En"
+                }
+            }
+        </script>
     </body>
 </html>
