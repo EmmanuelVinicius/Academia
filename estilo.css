@@ -1,8 +1,9 @@
 body{
 	font-family: 'Play', sans-serif;
 	text-align: left;
-	background: linear-gradient(to right, black,  gray, black);
-	font-size: 30pt;
+	/*background: linear-gradient(to right, black,  gray, black);*/
+	background: url(patt.png);
+	font-size: 2.5em;
 	color: white;
 }
 #voltar{
@@ -13,21 +14,8 @@ body{
 	font-size: 50pt;
 	margin-left: 20px;
 }
-#esq{
-	width: 100px;
-	height: 100px;
-	position: absolute;
-	left: 675px;
-	top: 49px;
+#dir{
 	transform: scaleX(-1);
-}
- #dir{
-	width: 100px;
-	height: 100px;
-	position: absolute;
-	left: 200px;
-	top: 49px;
-	
 }
 #fundo{
 	background: rgb(0, 0, 0);
@@ -46,6 +34,9 @@ input{
 	color: black;
 	font-size: 25pt;
 	text-align: center;
+}
+[type=submit], [type=reset], [type=button] {
+	background: darkgray;
 }
 input:focus{
     transition: all .2s ease;
