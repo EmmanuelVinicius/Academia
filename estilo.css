@@ -85,3 +85,30 @@ legend{
     color: white;
     box-shadow: none;
 }
+.dados{
+	padding: 0;
+	margin: 5px;
+	text-align: center;
+}
+#user{
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto; 
+}
+table{
+	border: 1px solid black;
+	background: black;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+td, th{
+	border: 1px solid black;
+	background: white;
+	color: black;
+	text-align: center;
+	height: 100px;
+}
+th{
+	background: rgba(140, 140, 140, 1);
+}

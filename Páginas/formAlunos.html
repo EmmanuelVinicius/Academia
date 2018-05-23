@@ -1,111 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<title>GYMLINK </title>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="../estilo.css">
-		<!--FONTES-->
-		<link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
-		<link rel="shortcut icon" href="../triceps.png" type="image/x-icon">
-	</head>
-	<body>
-		<div id="voltar" onClick="history.go(-1)">&laquo;</div>
-		<div id="fundo" style="color: white;">
-			<img id="esq" src="../triceps.png" alt="Logo GymLink">
-			<img id="dir" src="../triceps.png" alt="Logo GymLink">
-			<h1>GYMLINK</h1>
-			<hr>
-			<h3>O melhor em reduzir o papel</h3>
-		</div>
-		<form action="" method="post">
-			<!-- DADOS PESSOAIS-->
-			<h1 style="text-align: center;">Cadastro de Alunos</h1>
-			<fieldset>
-				<legend>Dados Pessoais</legend>
-				<label for="nome">Nome:</label>
-				<input type="text" name="nome">
-				<label for="sobrenome">Sobrenome:</label>
-				<input type="text" name="sobrenome">
-				<label>Registro do Aluno:</label>
-				<input type="number" name="ra" maxlength="9">
-				<label for="rg">RG:</label>
-				<input type="number" name="rg" maxlength="13">
-				<label>CPF:</label>
-				<input type="number" name="cpf" maxlength="9">
-			</fieldset>
-			<br>
-			<!-- ENDEREÇO -->
-			<fieldset>
-				<legend>Dados de Endereço</legend>
-				<label for="rua">Rua:</label>
-				<input type="text" name="rua">
-				<label for="numero">Numero:</label>
-				<input type="number" name="numero" size="4">
-				<label for="bairro">Bairro: </label>
-				<input type="text" name="bairro">
-				<label for="estado">Estado:</label>
-				<input type="text" name="estado">
-				<!--
-				<select name="estado">
-					<option value="ac">Acre</option>
-					<option value="al">Alagoas</option>
-					<option value="am">Amazonas</option>
-					<option value="ap">Amapá</option>
-					<option value="ba">Bahia</option>
-					<option value="ce">Ceará</option>
-					<option value="df">Distrito Federal</option>
-					<option value="es">Espírito Santo</option>
-					<option value="go">Goiás</option>
-					<option value="ma">Maranhão</option>
-					<option value="mt">Mato Grosso</option>
-					<option value="ms">Mato Grosso do Sul</option>
-					<option value="mg">Minas Gerais</option>
-					<option value="pa">Pará</option>
-					<option value="pb">Paraíba</option>
-					<option value="pr">Paraná</option>
-					<option value="pe">Pernambuco</option>
-					<option value="pi">Piauí</option>
-					<option value="rj">Rio de Janeiro</option>
-					<option value="rn">Rio Grande do Norte</option>
-					<option value="ro">Rondônia</option>
-					<option value="rs">Rio Grande do Sul</option>
-					<option value="rr">Roraima</option>
-					<option value="sc">Santa Catarina</option>
-					<option value="se">Sergipe</option>
-					<option value="sp">São Paulo</option>
-					<option value="to">Tocantins</option>
-				</select><br><br><br>
-			-->
-				<label for="cidade">Cidade: </label>
-				<input type="text" name="cidade">
-				<label for="cep">CEP: </label>
-				<input type="text" name="cep" maxlength="5">
-			</fieldset>
-			<br>
-			<!-- DADOS DE LOGIN -->
-			<fieldset>
-				<legend>Dados de login</legend>
-				<label for="email">E-mail: </label>
-				<input type="text" name="email">
-				<label for="imagem">Imagem de perfil:</label>
-				<input type="file" name="imagem">
-				<label for="login">Login de usuario: </label>
-				<input type="text" name="login">
-				<label for="pass">Senha: </label>
-				<input type="password" name="pass">
-				<label for="passconfirm">Confirme a senha: </label>
-				<input type="password" name="passconfirm">
-				<br>
-				<br>
-				<input type="checkbox" name="termos">
-				<label for="termos">Li e concordo com os
-				<a href="">Termos de Uso</a></label>
-			</fieldset>
-			<br>
-			<input type="submit">
-			<input type="reset" value="Limpar">
-		</form>
-	</body>
+
+<head>
+	<title>GYMLINK </title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../estilo.css">
+	<!--FONTES-->
+	<link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+	<link rel="shortcut icon" href="../triceps.png" type="image/x-icon">
+</head>
+
+<body>
+	<div id="voltar" onClick="history.go(-1)">&laquo;</div>
+	<div id="fundo" style="color: white;">
+		<h1>
+			<img src="../triceps.png">GYMLINK<img id="dir" src="../triceps.png">
+		</h1>
+
+		<hr>
+		<h3>O melhor em reduzir o papel</h3>
+	</div>
+	<form action="" method="post">
+		<h1 style="text-align: center;">Cadastro de Alunos</h1>
+		<fieldset>
+			<legend>Dados Pessoais</legend>
+			<label for="nome">Nome:</label>
+			<input type="text" name="nome">
+			<label for="sobrenome">Sobrenome:</label>
+			<input type="text" name="sobrenome">
+			<label for="dia">Nascimento:</label>
+			<input type="date" name="dia">
+			<label for="rg">RG:</label>
+			<input type="number" name="rg" maxlength="8">
+			<label for="cpf">CPF:</label>
+			<input type="number" name="cpf" maxlength="11">
+			<label for="email">Email: </label>
+			<input type="email" name="email">
+			<label for="tel">Telefone: </label>
+			<input type="tel" name="tel">
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>Dados de Endereço</legend>
+			<label for="rua">Rua:</label>
+			<input type="text" name="rua">
+			<label for="numero">Numero:</label>
+			<input type="number" name="numero" size="4">
+			<label for="bairro">Bairro: </label>
+			<input type="text" name="bairro">
+			<label for="estado">Estado:</label>
+			<input type="text" name="estado">
+			<label for="cidade">Cidade: </label>
+			<input type="text" name="cidade">
+			<label for="cep">CEP: </label>
+			<input type="text" name="cep" maxlength="5">
+		</fieldset>
+		<br>
+		<input type="submit">
+		<input type="reset" value="Limpar">
+	</form>
+</body>
+
 </html>
