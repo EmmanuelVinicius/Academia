@@ -27,6 +27,7 @@
             <input id="email" type="email" name="email">
             <label for="senha">Senha:</label>
             <input id="senha" type="password" name="senha">
+            <p id="erro" style="color: red"></p>
             <br>
             <br>
             <br>
@@ -38,20 +39,7 @@
             <input type="reset" value="Limpar">
         </fieldset>
     </form>
-    <script>
-        function vldUsuario() {
-            var email = document.getElementById("email"),
-                senha = document.getElementById("senha");
-
-            if (email.value == "aluno@una.com.br" && senha.value == "1234**") {
-                window.location.href = "telaPrincipal.html";
-            } else {
-                alert("Digite os dados corretamente!");
-                email.value = "";
-                senha.value = "";
-            }
-        }
-    </script>
+    <script type="text/javascript" src="../script.js" ></script>
 </body>
 
 </html>
