@@ -62,9 +62,3 @@ function aleatorio() {
         document.getElementsByClassName("cos")[i].value = costas[i];
     }
 }
-function escreve() {
-    var itens = document.getElementById("itens");
-    itens.innerHTML = "<p>" + braco[i] + "</p><br>"
-        for(var i = 0; i > 5; i++){
-    }
-}
