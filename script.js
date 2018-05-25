@@ -10,35 +10,11 @@ var anuncio = document.getElementsByClassName("anuncio"),
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 //      Ficha Aluno     \\
-var d = new Date();
-var days = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
-var dia = document.getElementById("semana").innerHTML = days[d.getDay()];
-if (d == 1) {
-}
-else if (d == 2) {
-}
-else if (d == 3) {
-}
-else if (d == 4) {
-}
-else if (d == 5) {
-}
-else if (d == 6) {
-}
+var f = new Date();
+var dias = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+var d = document.getElementById("semana").innerHTML = dias[f.getDay()];
+
 
 /* Set the width of the side navigation to 250px */
 function openNav() {
@@ -65,5 +41,30 @@ function vldUsuario() {
         erro.innerHTML = "Digite os dados corretamente!";
         email.value = "";
         senha.value = "";
+    }
+}
+
+
+//      Atividades      \\
+function aleatorio() {
+    var braco = ["Deltóide", "Biceps", "Triceps", "Flexor", "Braquiorradial"];
+    var torax = ["Peitoral Superior", "Peitoral Inferior", "Abdomem", "Grande Dorsal", "Serrátil"];
+    var costas = ["Trapézio", "Teres Maior", "Latíssimo Dorsal", "Erecto Spinae", "Obliquo Externo"];
+    var perna = ["Gluteos","Coxa Interna", "Coxa Externa", "Panturrilha", "Fibular"];
+
+    
+    for (var i = 5 - 1; i >= 0; i--) {
+        document.getElementsByClassName("bra")[i].value = braco[i];
+        document.getElementsByClassName("bra1")[i].value = braco[i];
+        document.getElementsByClassName("tor1")[i].value = torax[i];
+        document.getElementsByClassName("tor")[i].value = torax[i];
+        document.getElementsByClassName("per")[i].value = perna[i];
+        document.getElementsByClassName("cos")[i].value = costas[i];
+    }
+}
+function escreve() {
+    var itens = document.getElementById("itens");
+    itens.innerHTML = "<p>" + braco[i] + "</p><br>"
+        for(var i = 0; i > 5; i++){
     }
 }
