@@ -62,3 +62,5 @@ function aleatorio() {
         document.getElementsByClassName("cos")[i].textContent = costas[i];
     }
 }
+
+
