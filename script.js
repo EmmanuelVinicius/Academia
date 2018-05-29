@@ -15,13 +15,9 @@ var f = new Date();
 var dias = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
 var d = document.getElementById("semana").innerHTML = dias[f.getDay()];
 
-
-/* Set the width of the side navigation to 250px */
 function openNav() {
     document.getElementById("mySidenav").style.width = "60%";
 }
-
-/* Set the width of the side navigation to 0 */
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
@@ -63,4 +59,13 @@ function aleatorio() {
     }
 }
 
-
+function AddAluno() {
+    var name;
+    var sobrenome;
+    var elemento;
+    name = document.querySelector("[name=nome]").value;
+    sobrenome = document.querySelector("[name=sobrenome]").value;
+/*    elemento = document.querySelector("#alunos").innerHTML;
+    
+    elemento.innerHTML = "<p>" + name + " " + sobrenome + "</p>"
+*/  }
