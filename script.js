@@ -1,3 +1,19 @@
+//TELA INICIAl
+$(document).ready(function() {
+    $("[value=Entrar]").click(function() {
+        var email = $("#email").val(),
+            senha = $("#senha").val();
+
+        if (email == ("adm@gymlink.com.br") && senha == ("1234**")){
+            window.location.href = "Administrador/telaPrincipal.html";
+        } else if (email == ("aluno@gymlink.com.br") && senha == ("1234**")) {
+            window.location.href = "homeAluno.html"
+        } else{
+            $("#erro").text("Digite os dados corretamente!");
+        }
+    });
+});
+
 //      Home        \\
 var anuncio = document.getElementsByClassName("anuncio"),
     titulo = document.getElementsByClassName("titulo"),
@@ -22,23 +38,6 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
-
-//      Tela Login      \\
-function vldUsuario() {
-    var email = document.getElementById("email"),
-        senha = document.getElementById("senha"),
-        erro = document.getElementById("erro")
-
-    if (email.value == "adm@gymlink.com.br" && senha.value == "1234**") {
-        window.location.href = "Administrador/telaPrincipal.html";
-    } else if(email.value == "aluno@gymlink.com.br" && senha.value == "1234**"){
-        window.location.href = "homeAluno.html";
-    } else {
-        erro.innerHTML = "Digite os dados corretamente!";
-        email.value = "";
-        senha.value = "";
-    }
-}
 
 
 //      Atividades      \\

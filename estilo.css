@@ -112,10 +112,10 @@ legend{
 	transition: 0.3s;
 	font-size: 40pt;
 }
-
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
     color: #f1f1f1;
+	background: rgba(129, 129, 129, .1)
 }
 
 /* Position and style the close button (top right corner) */
