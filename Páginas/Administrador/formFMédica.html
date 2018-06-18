@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>GYMLINK </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../estilo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--FONTES-->
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+    <link rel="shortcut icon" href="../../triceps.png" type="image/x-icon">
+    <style>
+        [type=checkbox]{
+            width: 1em;
+            height: 1em;
+            margin: 10px 50px;
+        }
+        textarea{
+            width: 80%;
+	        height: 800px;
+	        border-radius: 6px;
+	        border: 4px solid black;
+	        margin: 2px 6.7% 15px 6.7%;
+	        background: rgba(90, 90, 90, .6);
+	        color: white;
+	        font-size: 25pt;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="voltar" onClick="history.go(-1)">&laquo;</div>
+    <div id="fundo" style="color: white;">
+        <h1>
+            <img src="../../triceps.png">GYMLINK<img id="dir" src="../../triceps.png">
+        </h1>
+
+        <hr>
+        <h3>O melhor em reduzir o papel</h3>
+    </div>
+    <form action="" method="post">
+        <h1 style="text-align: center;">Cadastro de Ficha Médica</h1>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="Mnome">Nome:</label>
+            <input type="text" name="Mnome">
+            <label for="Msobrenome">Sobrenome:</label>
+            <input type="text" name="Msobrenome">
+            <label for="Mdia">Nascimento:</label>
+            <input type="date" name="Mdia">
+            <label for="Mrg">RG:</label>
+            <input type="number" name="Mrg" maxlength="8">
+            <label for="Mcpf">CPF:</label>
+            <input type="number" name="Mcpf" maxlength="11">
+            <label for="Mpis">PIS:</label>
+            <input type="number" name="Mpis" maxlength="11">
+            <label for="Memail">Email:</label>
+            <input type="email" name="Memail">
+            <label for="Mtel">Telefone: </label>
+            <input type="tel" name="Mtel">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Dados Médicos</legend>
+            <label for="Mpeso">Peso</label>
+            <input type="number" name="Mpeso">
+            <label for="Mpeso">Altura</label>
+            <input type="number" name="Mpeso">
+            <label for="Mpeso">IMC</label>
+            <input type="number" name="Mpeso">
+            <label for="Msangue">Tipo Sanguíneo</label>
+            <input type="text" name="Msangue">
+            <label for="Maler">Alergias</label> <br>
+            <input type="checkbox" name="Maler1"> Poeira <br>
+            <input type="checkbox" name="Maler2"> Pêlo <br>
+            <input type="checkbox" name="Maler3"> Camarão <br>
+            <input type="checkbox" name="Maler4"> Ácaros <br>
+            <input type="checkbox" name="Maler5"> Outros <br>
+            <input type="text" name="Maler">
+            <label for="Medic">Medicamentos Necessários</label> <br>
+            <input type="checkbox" name="Medic1"> Paracetamol <br>
+            <input type="checkbox" name="Medic2"> Dipirona <br>
+            <input type="checkbox" name="Medic3"> Fluconazol <br>
+            <input type="checkbox" name="Medic4"> Hidroclorotiazida <br>
+            <input type="checkbox" name="Medic5"> Outros <br>
+            <input type="text" name="Medic">
+            <label for="Mresumo">Resumo Geral</label> <br>
+            <textarea name="Mresumo"></textarea>
+            <input type="submit" value="Salvar">
+            <input type="reset" value="Limpar">
+        </fieldset>
