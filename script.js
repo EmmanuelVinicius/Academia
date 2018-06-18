@@ -57,14 +57,13 @@ function aleatorio() {
         document.getElementsByClassName("cos")[i].textContent = costas[i];
     }
 }
-
-function AddAluno() {
-    var name;
-    var sobrenome;
-    var elemento;
-    name = document.querySelector("[name=nome]").value;
-    sobrenome = document.querySelector("[name=sobrenome]").value;
-/*    elemento = document.querySelector("#alunos").innerHTML;
+$(document).ready(function() {
     
-    elemento.innerHTML = "<p>" + name + " " + sobrenome + "</p>"
-*/  }
+    $("#noix").click(function() {
+        alert("ta ossso")
+        var nome = $("[name=nome]").val(),
+            sobrenome = $("[name=sobrenome]").val();
+        $("#alunos").append(nome + " " + sobrenome + "<br>")
+        window.location.href = "Alunos.html"
+    });
+});

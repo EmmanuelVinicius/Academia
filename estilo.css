@@ -9,7 +9,7 @@ body{
 #voltar{
 	position: absolute;
 	z-index: 9;
-	color: black;
+	color: white;
 	font-weight: 900;
 	font-size: 50pt;
 	margin-left: 20px;
@@ -129,7 +129,8 @@ legend{
 #user{
 	display: block;
 	margin-right: auto;
-	margin-left: auto; 
+	margin-left: auto;
+	filter: invert(100%);
 }
 .dados{
 	padding: 0;
