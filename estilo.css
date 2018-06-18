@@ -134,8 +134,8 @@ legend{
 }
 .dados{
 	padding: 0;
-	margin: 5px;
-	text-align: center;
+	margin: 15px 250px;
+	text-align: left;
 }
 td input{
 	background: none;
